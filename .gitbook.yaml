@@ -1,4 +1,4 @@
 root: ./docs
 
 redirects:  
-    help: support.md
+    help: docs1.md
