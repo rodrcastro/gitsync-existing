@@ -8,6 +8,4 @@ this is my first doc
 
 {% file src="ansible.cfg" %}
 
-Trying to embed a file directly from GitHub ![](ansible.cfg)
-
-Another change
+{% embed url="https://github.com/GitbookIO/support-bucket/issues/813" %}
