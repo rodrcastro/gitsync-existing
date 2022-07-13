@@ -1,4 +1,0 @@
-root: ./docs
-
-redirects:  
-    help: docs1.md
