@@ -8,9 +8,9 @@ this is my first doc
 
 {% file src="ansible.cfg" %}
 
-{% embed url="https://github.com/GitbookIO/support-bucket/issues/813" text="Hello world" %}
+{% embed url="https://github.com/GitbookIO/support-bucket/issues/813"  %}
 
-{% content-ref url="https://github.com/GitbookIO/support-bucket/issues/813" %}
+{% content-ref url="https://github.com/GitbookIO/support-bucket/issues/813" text="Hello world" %}
 
 {% endcontent-ref %}
 
