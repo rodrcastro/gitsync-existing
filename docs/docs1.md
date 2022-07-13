@@ -10,7 +10,7 @@ this is my first doc
 
 {% embed url="https://github.com/GitbookIO/support-bucket/issues/813" %}
 
-{% content-ref url="https://github.com/GitbookIO/support-bucket/issues/813" %}
+{% content-ref url="https://github.com/GitbookIO/support-bucket/issues/813" title="Issue 813 on GitHub" %}
 [Issue 813 on GitHub](https://github.com/GitbookIO/support-bucket/issues/813)
 {% endcontent-ref %}
 
