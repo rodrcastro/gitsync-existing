@@ -8,12 +8,12 @@ this is my first doc
 
 {% file src="ansible.cfg" %}
 
-{% embed url="https://github.com/GitbookIO/support-bucket/issues/813"  %}
+{% embed url="https://github.com/GitbookIO/support-bucket/issues/813" %}
 
 {% content-ref url="https://github.com/GitbookIO/support-bucket/issues/813" text="Hello world" %}
 
 {% endcontent-ref %}
 
 {% content-ref url="docs2.md" %}
-[docs2.md](docs2.md)
+[Docs test](docs2.md)
 {% endcontent-ref %}
