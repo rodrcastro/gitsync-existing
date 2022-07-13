@@ -1,1 +1,0 @@
-Hello world from this new doc to test out Git Sync
