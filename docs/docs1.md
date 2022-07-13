@@ -9,3 +9,5 @@ this is my first doc
 {% file src="ansible.cfg" %}
 
 {% embed url="https://github.com/GitbookIO/support-bucket/issues/813" %}
+
+{% page-ref page="https://github.com/GitbookIO/support-bucket/issues/813" %}
