@@ -1,14 +1,17 @@
 ---
 description: Let me try editing this
+layout: landing
 ---
+
+# docs1 edit 123
 
 this is my first doc - second edit
 
 now adding something else to the page
 
-## An
+{% embed url="https://www.wolframalpha.com/input?i=1+1" %}
 
-
+### An
 
 I removed anchor 2
 
