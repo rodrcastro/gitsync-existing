@@ -8,4 +8,4 @@
   * [docs3](another-folder/docs3.md)
 * [this-folder](this-folder/README.md)
   * [docs5 new change](this-folder/newfile.md)
-  * [Second page (caps lock)](this-folder/second.md)
+  * [Second page (caps lock)](this-folder/SECOND.md)
