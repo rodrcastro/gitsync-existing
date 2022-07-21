@@ -1,6 +1,5 @@
 ---
 description: Let me try editing this
-layout: landing
 ---
 
 # docs1 edit 123
