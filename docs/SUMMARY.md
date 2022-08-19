@@ -9,6 +9,3 @@
 * [this-folder](this-folder/README.md)
   * [docs5 new change](this-folder/newfile.md)
   * [Second page (caps lock)](this-folder/SECOND.md)
-* [Page 1](page-1/README.md)
-  * [Miro Embed](page-1/miro-embed.md)
-  * [Miro Embed](page-1/miro-embed-1.md)
