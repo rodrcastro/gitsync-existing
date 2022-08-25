@@ -1,7 +1,3 @@
----
-layout: landing
----
-
 # README
 
 This is a second readme file to see what GitBook does with it.
@@ -27,3 +23,8 @@ Test 4
 Testing out a new change to see if I can capture the network issue
 
 Let me try writing somëthing with this
+
+1. Hello
+2. World
+   1. I'm
+      1. Today
