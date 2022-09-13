@@ -24,8 +24,7 @@ Testing out a new change to see if I can capture the network issue
 
 Let me try writing somëthing with this
 
-- Bullet
-- Points
-- In
-- Markdown
-- Git Sync
+1. Hello
+2. World
+   1. I'm
+      1. Today
