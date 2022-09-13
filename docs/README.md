@@ -28,3 +28,12 @@ Let me try writing somëthing with this
 2. World
    1. I'm
       1. Today
+
+- Testing
+- Out
+- Bullet
+- Points
+- In
+- Markdown
+- Git Sync
+
