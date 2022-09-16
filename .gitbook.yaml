@@ -2,4 +2,4 @@ root: ./docs
 
 redirects:  
     help-test: docs1.md
-    second-try: this-folder/second.md
+    second-try: this-folder/SECOND.md
