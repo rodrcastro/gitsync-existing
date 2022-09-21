@@ -1,11 +1,11 @@
 # Page 1
 
 {% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+[Group 1](group-1)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+[Group 1](group-1)
 {% endcontent-ref %}
 
 Link para página abaixo
