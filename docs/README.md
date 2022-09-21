@@ -34,12 +34,16 @@ Link para página abaixo
 [page-2.md](group-1/page-2.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
 ## New link created in the latest commig
 
 {% content-ref url="group-1/" %}
 [group-1](group-1/)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
