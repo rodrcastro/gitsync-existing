@@ -16,8 +16,8 @@ Link para página abaixo
 
 ### Novos links para Grupo 1 para editar via GitHub
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="group-1" %}
+[Group 1](group-1)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}
