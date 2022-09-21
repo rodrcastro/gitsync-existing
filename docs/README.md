@@ -1,10 +1,10 @@
 # Page 1
 
-{% content-ref url="broken-reference" %}
+{% content-ref url="group-1" %}
 [Group 1](group-1)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
+{% content-ref url="group-1" %}
 [Group 1](group-1)
 {% endcontent-ref %}
 
