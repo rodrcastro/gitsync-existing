@@ -37,3 +37,9 @@ Link para página abaixo
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
 {% endcontent-ref %}
+
+## New link created in the latest commig
+
+{% content-ref url="group-1/" %}
+[group-1](group-1/)
+{% endcontent-ref %}
