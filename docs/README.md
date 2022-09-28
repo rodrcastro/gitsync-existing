@@ -37,3 +37,11 @@ Let me try writing somëthing with this
 - Markdown
 - Git Sync
 
+## File link
+
+{% file src=".gitbook/assets/source-files/invoice.pdf" %}
+
+
+{% file src="./.gitbook/assets/source-files/invoice.pdf" %}
+
+
