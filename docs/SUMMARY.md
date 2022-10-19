@@ -12,3 +12,6 @@
 * [Page 1](page-1/README.md)
   * [Miro Embed](page-1/miro-embed.md)
   * [Miro Embed](page-1/miro-embed-1.md)
+* [FolderName](FolderName/README.md)
+  * [file1](FolderName/file1.md)
+  * [file2](FolderName/file2.md)
