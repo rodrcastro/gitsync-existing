@@ -15,3 +15,6 @@
 * [FolderName](FolderName/README.md)
   * [file1](FolderName/file1.md)
   * [file2](FolderName/file2.md)
+* [TryingNewName](tryingnewname/README.md)
+  * [Page 1](tryingnewname/page-1.md)
+  * [Page 2](tryingnewname/page-2.md)
