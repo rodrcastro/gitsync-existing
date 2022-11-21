@@ -5,7 +5,3 @@ hello
 Creating a different change
 
 Another change
-
-
-
-First change
