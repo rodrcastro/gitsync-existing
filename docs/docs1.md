@@ -22,6 +22,8 @@ I removed anchor 2
 
 Added this two lines
 
+Será?
+
 {% file src="ansible.cfg" %}
 
 {% embed url="https://github.com/GitbookIO/support-bucket/issues/813" %}
