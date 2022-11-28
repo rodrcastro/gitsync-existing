@@ -4,3 +4,5 @@
 
 {% file src="../.gitbook/assets/CleanShot 2022-09-27 at 15.37.19 (1).mp4" %}
 
+{% embed url="../.gitbook/assets/CleanShot 2022-09-27 at 15.37.19 (1).mp4" %}
+
