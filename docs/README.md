@@ -29,19 +29,17 @@ Let me try writing somëthing with this
    1. I'm
       1. Today
 
-- Testing
-- Out
-- Bullet
-- Points
-- In
-- Markdown
-- Git Sync
+* Testing
+* Out
+* Bullet
+* Points
+* In
+* Markdown
+* Git Sync
+* Change
 
 ## File link
 
 {% file src=".gitbook/assets/source-files/invoice.pdf" %}
 
-
-{% file src="./.gitbook/assets/source-files/invoice.pdf" %}
-
-
+{% file src=".gitbook/assets/source-files/invoice.pdf" %}
