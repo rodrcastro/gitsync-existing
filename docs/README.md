@@ -43,6 +43,12 @@ How do they look -->
 
 With Git Sync --->&#x20;
 
+Edit coming from GitHub, let's test those arrows ->
+
+How about this arrow -->
+
+And this one --->
+
 ## File link
 
 {% file src=".gitbook/assets/source-files/invoice.pdf" %}
