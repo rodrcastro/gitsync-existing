@@ -3,4 +3,5 @@ root: ./docs
 redirects:  
     help-test: docs1.md
     second-try: this-folder/SECOND.md
-    v/gitsync: another-folder/docs5.md
+    product-docs: docs3.md
+    testing-cards: another-folder/docs5.md
