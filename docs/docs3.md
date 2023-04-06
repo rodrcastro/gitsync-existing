@@ -6,5 +6,4 @@ Another unrelated change
 
 whatever
 
-<!-- INCLUDE adding acomment -->
-<!-- END -->
+this time I'm also doing a change to the page I added the MD comments
