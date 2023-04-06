@@ -7,3 +7,5 @@ Another unrelated change
 whatever
 
 this time I'm also doing a change to the page I added the MD comments
+
+<!-- I'm adding another comment, let me test something -->
