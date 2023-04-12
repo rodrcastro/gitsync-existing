@@ -24,6 +24,14 @@ Added this two lines
 
 {% file src="ansible.cfg" %}
 
+Testing downloading the ansible file [as a link](ansible.cfg)
+
+Testing downloading the spreadsheet file [as well as a link](.gitbook/assets/teste%20eventos.xlsx)
+
+And as a file
+
+{% file src=".gitbook/assets/teste%20eventos.xlsx" %}
+
 {% embed url="https://github.com/GitbookIO/support-bucket/issues/813" %}
 
 {% content-ref url="https://github.com/GitbookIO/support-bucket/issues/813" %}
