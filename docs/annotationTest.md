@@ -42,6 +42,8 @@ Remember that text can also be dynamic, data-driven[^data] or localized[^localiz
 
 [^data]: Anywhere text is displayed, it can be substituted and merged with the data in context. For more information read about the [Text Property Editor](http://localhost:5000/s/QDXZ8sPLqo1Z0IswdI3w/servoy-core/page-3/object-editors/text-property-editor)
 
+[^localized]: Anywhere you show text, it can be translated and localized to the users language. For more information, read our guide on [Multi-Language Support](../../../multi-language-support.md)
+
 ### Setting an Image / Font-Icon
 
 Many times, a button will be decorated with an image or font icon. To add an image to your button, edit the [`imageStyleClass`](http://localhost:5000/s/QDXZ8sPLqo1Z0IswdI3w/extensions/ui-components/buttons-and-text/button#imagestyleclass) property and choose the image style class of the font icon you wish to use. For example, enter a value of `fa fa-user-plus` to get a nice "Add User" icon.
@@ -141,6 +143,5 @@ The following articles are recommended for additional reading:
 
 [^desgin-time]: design-time annotation test
 
-[^localized]: Anywhere you show text, it can be translated and localized to the users language. For more information, read our guide on [Multi-Language Support](../../../multi-language-support.md)
 
 
