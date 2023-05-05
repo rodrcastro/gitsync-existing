@@ -58,6 +58,8 @@ Like all components, a Button has a button can be styled using themes, variants 
 
 If you are using Variants[^variants], then you can easily drag and drop variations of your button onto your form.
 
+[^variants]: [Variants](../../styling-and-themes/component-variants.md) are pre-styled variations of components. You can create variants using theme properties and CSS and they will be available to quickly add to your forms. For more information, see the guid on [Styling and Themes](../../styling-and-themes/).
+
 <figure><img src="../../../../images/exampleButton - Variant.gif" alt=""><figcaption><p>Button Variant being dropped on a form</p></figcaption></figure>
 
 ## Handling Events
@@ -141,4 +143,4 @@ The following articles are recommended for additional reading:
 
 [^localized]: Anywhere you show text, it can be translated and localized to the users language. For more information, read our guide on [Multi-Language Support](../../../multi-language-support.md)
 
-[^variants]: [Variants](../../styling-and-themes/component-variants.md) are pre-styled variations of components. You can create variants using theme properties and CSS and they will be available to quickly add to your forms. For more information, see the guid on [Styling and Themes](../../styling-and-themes/).
+
