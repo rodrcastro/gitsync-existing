@@ -13,3 +13,4 @@
   * [Miro Embed](page-1/miro-embed-1.md)
 * [JSEvent](JSEvent.md)
 * [Annotation Test](annotationTest.md)
+* [Second appearence of docs3](docs3.md)
