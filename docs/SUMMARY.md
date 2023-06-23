@@ -13,5 +13,5 @@
   * [Miro Embed](page-1/miro-embed-1.md)
 * [JSEvent](JSEvent.md)
 * [Annotation Test](annotationTest.md)
-*
+* [Docs3 from summary md again](another-folder/docs3.md)
 * [Testing docs3 from GitBook editor](another-folder/docs3.md)
