@@ -1,5 +1,16 @@
 ---
 description: Let me try editing this
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: false
+  pagination:
+    visible: false
 ---
 
 # docs1 edit 123
@@ -30,7 +41,7 @@ Testing downloading the spreadsheet file [as well as a link](.gitbook/assets/tes
 
 And as a file
 
-{% file src=".gitbook/assets/teste%20eventos.xlsx" %}
+{% file src=".gitbook/assets/teste eventos.xlsx" %}
 
 {% embed url="https://github.com/GitbookIO/support-bucket/issues/813" %}
 

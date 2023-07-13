@@ -41,7 +41,7 @@ Testing arrows ->
 
 How do they look -->
 
-With Git Sync --->&#x20;
+With Git Sync --->
 
 Edit coming from GitHub, let's test those arrows ->
 
@@ -56,3 +56,5 @@ And this one --->
 {% file src=".gitbook/assets/source-files/invoice.pdf" %}
 
 Changing again
+
+Creating a new change
