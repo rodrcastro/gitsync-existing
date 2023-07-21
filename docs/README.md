@@ -18,6 +18,40 @@ Test 3
 Test 4
 {% endhint %}
 
+###
+
+{% swagger method="get" path="" baseUrl="" summary="Testing" %}
+{% swagger-description %}
+test
+{% endswagger-description %}
+
+{% swagger-parameter in="path" name="123" %}
+test
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="456" %}
+test
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="789" %}
+test
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="10" %}
+test
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="test" %}
+test
+{% endswagger-response %}
+{% endswagger %}
+
+###
+
+{% swagger src=".gitbook/assets/tcadle434-LIST_INSTRUCTIONS-0.1-resolved.yaml" path="/query/solana" method="post" %}
+[tcadle434-LIST_INSTRUCTIONS-0.1-resolved.yaml](.gitbook/assets/tcadle434-LIST_INSTRUCTIONS-0.1-resolved.yaml)
+{% endswagger %}
+
 ### JOANSJODNOJASNDJONASOJNDOJASNOJNFAOSNF
 
 Testing out a new change to see if I can capture the network issue
@@ -56,5 +90,3 @@ And this one --->
 {% file src=".gitbook/assets/source-files/invoice.pdf" %}
 
 Changing again
-
-Creating a new change

@@ -1,0 +1,259 @@
+---
+openapi: 3.0.1
+info:
+  title: LIST_INSTRUCTIONS
+  description: List instructions for a program
+  version: "0.1"
+servers:
+- url: https://mainnet.carpool.dev
+- url: https://devnet.carpool.dev
+paths:
+  /query/solana:
+    post:
+      summary: LIST_INSTRUCTIONS
+      description: List instructions for a program
+      parameters:
+      - name: x-api-key
+        in: header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          description: the API key
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Schema'
+            examples:
+              "0":
+                value: |-
+                  {
+                    "type": "LIST_INSTRUCTIONS",
+                    "query": {
+                      "programId": "CYPH3o83JX6jY6NkbproSpdmQ5VWJtxjfJ5P8veyYVu3",
+                      "instructionName": "depositFunds",
+                      "failures": false,
+                      "pagination": {
+                        "offset": 0,
+                        "limit": 10
+                      },
+                      "sort": {
+                        "order": "desc"
+                      },
+                      "fields": [],
+                      "timeRange": {
+                        "before": "2023-07-12T22:53:09+0000",
+                        "after": "2023-07-11T22:53:09+0000"
+                      }
+                    }
+                  }
+      responses:
+        "200":
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+    servers:
+    - url: https://mainnet.carpool.dev
+components:
+  schemas:
+    Schema:
+      required:
+      - query
+      - type
+      type: object
+      properties:
+        type:
+          type: string
+          description: should be set to 'LIST_INSTRUCTIONS' This is the type of query you want to perform.
+        query:
+          $ref: '#/components/schemas/Query'
+    Query:
+      required:
+      - programId
+      type: object
+      properties:
+        programId:
+          type: string
+          description: The Solana programId
+        instructionName:
+          type: string
+          description: The name of the instruction
+          nullable: true
+        failures:
+          type: boolean
+          description: Set true to index failures. Defaults to false
+          nullable: true
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+        sort:
+          $ref: '#/components/schemas/Sort'
+        fields:
+          type: array
+          description: Fields to fetch. An empty array returns full objects.
+          items:
+            type: string
+        timeRange:
+          $ref: '#/components/schemas/TimeRange'
+    Pagination:
+      type: object
+      properties:
+        offset:
+          type: integer
+        limit:
+          type: integer
+    Sort:
+      type: object
+      properties:
+        order:
+          type: string
+          description: asc | desc; defaults to 'desc'
+    TimeRange:
+      type: object
+      properties:
+        before:
+          type: string
+          description: defaults to now - ISO or MS
+        after:
+          type: string
+          description: defaults to EPOCH - ISO or MS
+    Instruction:
+      type: object
+      properties:
+        txSignature:
+          type: string
+          description: The transaction signature
+        slot:
+          type: integer
+          description: The slot number
+        args:
+          type: object
+          description: The instruction arguments
+        logs:
+          type: array
+          description: Logs related to the instruction
+          items:
+            type: string
+        timestamp:
+          type: integer
+          description: The timestamp of the instruction
+        isFailure:
+          type: boolean
+          description: Indicates whether the instruction is a failure or success
+        errorCode:
+          type: string
+          description: "Error code, if applicable"
+          nullable: true
+        balances:
+          type: array
+          description: Balances of associated accounts
+          items:
+            $ref: '#/components/schemas/Balance'
+        accounts:
+          $ref: '#/components/schemas/Accounts'
+        programId:
+          type: string
+          description: Solana program ID
+        instructionName:
+          type: string
+          description: Name of the instruction
+        txIndex:
+          type: integer
+          description: Transaction index
+    Balance:
+      type: object
+      properties:
+        pubKey:
+          type: string
+          description: Public key of the account
+        lamports:
+          $ref: '#/components/schemas/LamportsBalance'
+        token:
+          $ref: '#/components/schemas/TokenBalance'
+    LamportsBalance:
+      type: object
+      properties:
+        pre:
+          type: integer
+        post:
+          type: integer
+        delta:
+          type: integer
+      description: Lamports balance information
+    TokenBalance:
+      type: object
+      properties:
+        owner:
+          type: string
+          description: Owner of the token account
+        mint:
+          type: string
+          description: Mint address of the token
+        pre:
+          type: integer
+          description: Token balance before the instruction
+        post:
+          type: integer
+          description: Token balance after the instruction
+        delta:
+          type: integer
+          description: Change in token balance
+        decimals:
+          type: integer
+          description: Number of decimals for the token
+      nullable: true
+    Accounts:
+      type: object
+      properties:
+        subAccount:
+          type: string
+          description: Sub-account address
+        cacheAccount:
+          type: string
+          description: Cache account address
+        pool:
+          type: string
+          description: Pool address
+        poolNode:
+          type: string
+          description: Pool node address
+        tokenVault:
+          type: string
+          description: Token vault address
+        tokenMint:
+          type: string
+          description: Token mint address
+        authority:
+          type: string
+          description: Authority address
+        masterAccount:
+          type: string
+          description: Master account address
+        tokenProgram:
+          type: string
+          description: Token program address
+        clearing:
+          type: string
+          description: Clearing address
+        sourceTokenAccount:
+          type: string
+          description: Source token account address
+    inline_response_200:
+      type: object
+      properties:
+        response:
+          $ref: '#/components/schemas/inline_response_200_response'
+        warning:
+          type: array
+          items:
+            type: string
+    inline_response_200_response:
+      type: object
+      properties:
+        instructions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Instruction'

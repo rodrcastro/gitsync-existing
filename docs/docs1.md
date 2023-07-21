@@ -1,16 +1,5 @@
 ---
 description: Let me try editing this
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: false
 ---
 
 # docs1 edit 123
