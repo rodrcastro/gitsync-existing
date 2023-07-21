@@ -90,3 +90,23 @@ And this one --->
 {% file src=".gitbook/assets/source-files/invoice.pdf" %}
 
 Changing again
+
+<details>
+<summary>
+Title name
+</summary>
+
+
+- **Description**:
+
+- **Required**:
+
+- **Type**:
+
+- **Key**:
+
+- **Fields**:
+
+Further dropdowns of the same format
+
+</details>
