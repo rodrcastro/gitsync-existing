@@ -50,7 +50,7 @@ test
 
 
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td>Let me try a link in a card</td><td><a href="this-folder/newfile.md">newfile.md</a></td></tr><tr><td></td><td>Add a link in the <a href="another-folder/docs3.md">text fileld as well</a>?</td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td>editing card 2</td><td>Let me try a link in a card</td><td><a href="this-folder/newfile.md">newfile.md</a></td></tr><tr><td>Editing card</td><td>Add a link in the <a href="another-folder/docs3.md">text fileld as well</a>?</td><td></td></tr><tr><td></td><td>Adding some text to the card</td><td></td></tr></tbody></table>
 
 Let me merge a change that has nothing to do with the cards
 
