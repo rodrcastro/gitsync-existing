@@ -52,6 +52,8 @@ test
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td>Let me try a link in a card</td><td><a href="this-folder/newfile.md">newfile.md</a></td></tr><tr><td></td><td>Add a link in the <a href="another-folder/docs3.md">text fileld as well</a>?</td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
 
+Let me merge a change that has nothing to do with the cards
+
 {% swagger src=".gitbook/assets/tcadle434-LIST_INSTRUCTIONS-0.1-resolved.yaml" path="/query/solana" method="post" %}
 [tcadle434-LIST_INSTRUCTIONS-0.1-resolved.yaml](.gitbook/assets/tcadle434-LIST_INSTRUCTIONS-0.1-resolved.yaml)
 {% endswagger %}
