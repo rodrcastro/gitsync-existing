@@ -18,26 +18,28 @@ Test 3
 Test 4
 {% endhint %}
 
-###
+Let me try [linking](this-folder/SECOND.md) with Git sync
+
+Maybe with a different link [docs3.md](another-folder/docs3.md "mention")
 
 {% swagger method="get" path="" baseUrl="" summary="Testing" %}
 {% swagger-description %}
 test
 {% endswagger-description %}
 
-{% swagger-parameter in="path" name="123" %}
+{% swagger-parameter in="path" name="123" required="false" %}
 test
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="456" %}
+{% swagger-parameter in="query" name="456" required="false" %}
 test
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="789" %}
+{% swagger-parameter in="header" name="789" required="false" %}
 test
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="10" %}
+{% swagger-parameter in="body" name="10" required="false" %}
 test
 {% endswagger-parameter %}
 
@@ -92,20 +94,14 @@ And this one --->
 Changing again - teting a change for signing key
 
 <details>
-<summary>
-Title name
-</summary>
 
+<summary>Title name</summary>
 
-- **Description**:
-
-- **Required**:
-
-- **Type**:
-
-- **Key**:
-
-- **Fields**:
+* **Description**:
+* **Required**:
+* **Type**:
+* **Key**:
+* **Fields**:
 
 Further dropdowns of the same format
 
