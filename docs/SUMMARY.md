@@ -11,3 +11,4 @@
   * [Second page (caps lock)](this-folder/SECOND.md)
 * [JSEvent](JSEvent.md)
 * [Annotation Test](annotationTest.md)
+* [Mermaid diagram test](mermaid-diagram-test.md)
