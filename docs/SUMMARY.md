@@ -10,5 +10,5 @@
   * [docs5 new change](this-folder/newfile.md)
   * [Second page (caps lock)](this-folder/SECOND.md)
 * [JSEvent](JSEvent.md)
-* [👩🌾 Annotation Test](annotationTest.md)
+* [Annotation Test](annotationTest.md)
 * [Mermaid diagram test](mermaid-diagram-test.md)
