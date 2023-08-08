@@ -12,3 +12,4 @@
 * [JSEvent](JSEvent.md)
 * [Annotation Test](annotationTest.md)
 * [Mermaid diagram test](mermaid-diagram-test.md)
+* [](this-folder/newfile.md)
