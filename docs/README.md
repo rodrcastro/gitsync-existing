@@ -22,7 +22,7 @@ Let me try [linking](this-folder/SECOND.md) with Git sync
 
 Maybe with a different link [docs3.md](another-folder/docs3.md "mention")
 
-{% swagger method="get" path="" baseUrl="" summary="Testing" %}
+{% swagger method="get" path="" baseUrl="" summary="Testing" expanded="true" %}
 {% swagger-description %}
 test
 {% endswagger-description %}
@@ -96,6 +96,10 @@ And this one --->
 {% file src=".gitbook/assets/source-files/invoice.pdf" %}
 
 Changing again - teting a change for signing key
+
+{% swagger src=".gitbook/assets/tcadle434-LIST_INSTRUCTIONS-0.1-resolved.yaml" path="/query/solana" method="post" expanded="true" %}
+[tcadle434-LIST_INSTRUCTIONS-0.1-resolved.yaml](.gitbook/assets/tcadle434-LIST_INSTRUCTIONS-0.1-resolved.yaml)
+{% endswagger %}
 
 <details>
 
