@@ -1,5 +1,3 @@
 # Page 1
 
-another change
-
-merge is blocked, good
+Updating this space synced with Discord
