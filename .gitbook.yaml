@@ -5,4 +5,4 @@ redirects:
     second-try: this-folder/SECOND.md
     product-docs: docs3.md
     testing-cards: another-folder/docs5.md
-    root: docs4.md
+    git-sync-test-space: docs4.md
