@@ -5,3 +5,4 @@ redirects:
     second-try: this-folder/SECOND.md
     product-docs: docs3.md
     testing-cards: another-folder/docs5.md
+    /: docs4.md
