@@ -2,9 +2,9 @@
 
 * [README](README.md)
 * [docs1 edit 123](docs1.md)
-
 * [docs3](docs3.md)
 * [another-folder](another-folder/README.md)
+  * [Page 2](another-folder/page-2.md)
   * [docs3](another-folder/docs3.md)
 * [this-folder](this-folder/README.md)
   * [docs2](this-folder/docs2.md)
