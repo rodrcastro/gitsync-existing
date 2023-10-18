@@ -8,7 +8,7 @@
   * [docs3](another-folder/docs3.md)
 * [this-folder](this-folder/README.md)
   * [docs2](this-folder/docs2.md)
-  * [docs5 new change](this-folder/newfile.md)
+  * [docs5 new change](this-folder/this-is-a-new-file.md)
   * [Second page (caps lock)](this-folder/SECOND.md)
 * [JSEvent](JSEvent.md)
 * [Annotation Test](annotationTest.md)
