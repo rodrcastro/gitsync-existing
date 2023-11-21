@@ -8,7 +8,21 @@ whatever
 
 this time I'm also doing a change to the page I added the MD comments
 
+---
 
+# Creating a header
+
+Linking to that [header](./#creating-a-header) the way Hervé mentioned
+
+[Linking](#creating-a-header) the way I think should work
+
+## Creating an H2 header
+
+Linking to the [H2 Header](./creating-an-h2-header) the way Hervé mentioned
+
+[Linking](#creating-an-h2-header) the way I think should work
+
+---
 
 Testing after fix from eng
 
