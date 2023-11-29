@@ -1,12 +1,10 @@
-# AllowlistV1
+# Allowlist Test
 
-*Kiln*
+_Kiln_
 
 > Allowlist (v1)
 
-This contract handles the list of allowed recipients. All accounts have an uint256 value associated with their addresses, where each bit represents a right in the system. The DENY_MASK defines the mask used to identify if the denied bit is on, preventing users from interacting with the system
-
-
+This contract handles the list of allowed recipients. All accounts have an uint256 value associated with their addresses, where each bit represents a right in the system. The DENY\_MASK defines the mask used to identify if the denied bit is on, preventing users from interacting with the system
 
 ## Methods
 
@@ -18,8 +16,9 @@ function acceptAdmin() external nonpayable
 
 Accept the transfer of ownership
 
-*Only callable by the pending admin. Resets the pending admin if succesful.*
+_Only callable by the pending admin. Resets the pending admin if succesful._
 
+_Testing adding a change_
 
 ### allow
 
@@ -29,14 +28,14 @@ function allow(address[] _accounts, uint256[] _permissions) external nonpayable
 
 Sets the allowlisting status for one or more accounts
 
-*The permission value is overridden and not updated*
+_The permission value is overridden and not updated_
 
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| _accounts | address[] | Accounts with statuses to edit |
-| _permissions | uint256[] | Allowlist permissions for each account, in the same order as _accounts |
+| Name          | Type       | Description                                                             |
+| ------------- | ---------- | ----------------------------------------------------------------------- |
+| \_accounts    | address\[] | Accounts with statuses to edit                                          |
+| \_permissions | uint256\[] | Allowlist permissions for each account, in the same order as \_accounts |
 
 ### getAdmin
 
@@ -46,14 +45,11 @@ function getAdmin() external view returns (address)
 
 Retrieves the current admin address
 
-
-
-
 #### Returns
 
-| Name | Type | Description |
-|---|---|---|
-| _0 | address | The admin address |
+| Name | Type    | Description       |
+| ---- | ------- | ----------------- |
+| \_0  | address | The admin address |
 
 ### getAllower
 
@@ -63,14 +59,11 @@ function getAllower() external view returns (address)
 
 Retrieves the allower address
 
-
-
-
 #### Returns
 
-| Name | Type | Description |
-|---|---|---|
-| _0 | address | The address of the allower |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \_0  | address | The address of the allower |
 
 ### getPendingAdmin
 
@@ -80,14 +73,11 @@ function getPendingAdmin() external view returns (address)
 
 Retrieve the current pending admin address
 
-
-
-
 #### Returns
 
-| Name | Type | Description |
-|---|---|---|
-| _0 | address | The pending admin address |
+| Name | Type    | Description               |
+| ---- | ------- | ------------------------- |
+| \_0  | address | The pending admin address |
 
 ### getPermissions
 
@@ -97,19 +87,17 @@ function getPermissions(address _account) external view returns (uint256)
 
 This method retrieves the raw permission value
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| _account | address | Recipient to verify |
+| Name      | Type    | Description         |
+| --------- | ------- | ------------------- |
+| \_account | address | Recipient to verify |
 
 #### Returns
 
-| Name | Type | Description |
-|---|---|---|
-| _0 | uint256 | The raw permissions value of the account |
+| Name | Type    | Description                              |
+| ---- | ------- | ---------------------------------------- |
+| \_0  | uint256 | The raw permissions value of the account |
 
 ### hasPermission
 
@@ -117,22 +105,20 @@ This method retrieves the raw permission value
 function hasPermission(address _account, uint256 _mask) external view returns (bool)
 ```
 
-This method returns true if the user has the expected permission         ignoring any deny list membership
-
-
+This method returns true if the user has the expected permission ignoring any deny list membership
 
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| _account | address | Recipient to verify |
-| _mask | uint256 | Combination of permissions to verify |
+| Name      | Type    | Description                          |
+| --------- | ------- | ------------------------------------ |
+| \_account | address | Recipient to verify                  |
+| \_mask    | uint256 | Combination of permissions to verify |
 
 #### Returns
 
-| Name | Type | Description |
-|---|---|---|
-| _0 | bool | True if mask is respected |
+| Name | Type | Description               |
+| ---- | ---- | ------------------------- |
+| \_0  | bool | True if mask is respected |
 
 ### initAllowlistV1
 
@@ -142,14 +128,12 @@ function initAllowlistV1(address _admin, address _allower) external nonpayable
 
 Initializes the allowlist
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| _admin | address | Address of the Allowlist administrator |
-| _allower | address | Address of the allower |
+| Name      | Type    | Description                            |
+| --------- | ------- | -------------------------------------- |
+| \_admin   | address | Address of the Allowlist administrator |
+| \_allower | address | Address of the allower                 |
 
 ### isAllowed
 
@@ -157,22 +141,20 @@ Initializes the allowlist
 function isAllowed(address _account, uint256 _mask) external view returns (bool)
 ```
 
-This method returns true if the user has the expected permission and         is not in the deny list
-
-
+This method returns true if the user has the expected permission and is not in the deny list
 
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| _account | address | Recipient to verify |
-| _mask | uint256 | Combination of permissions to verify |
+| Name      | Type    | Description                          |
+| --------- | ------- | ------------------------------------ |
+| \_account | address | Recipient to verify                  |
+| \_mask    | uint256 | Combination of permissions to verify |
 
 #### Returns
 
-| Name | Type | Description |
-|---|---|---|
-| _0 | bool | True if mask is respected and user is allowed |
+| Name | Type | Description                                   |
+| ---- | ---- | --------------------------------------------- |
+| \_0  | bool | True if mask is respected and user is allowed |
 
 ### isDenied
 
@@ -182,19 +164,17 @@ function isDenied(address _account) external view returns (bool)
 
 This method returns true if the user is in the deny list
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| _account | address | Recipient to verify |
+| Name      | Type    | Description         |
+| --------- | ------- | ------------------- |
+| \_account | address | Recipient to verify |
 
 #### Returns
 
-| Name | Type | Description |
-|---|---|---|
-| _0 | bool | True if user is denied access |
+| Name | Type | Description                   |
+| ---- | ---- | ----------------------------- |
+| \_0  | bool | True if user is denied access |
 
 ### onlyAllowed
 
@@ -204,14 +184,12 @@ function onlyAllowed(address _account, uint256 _mask) external view
 
 This method should be used as a modifier and is expected to revert if the user hasn't got the required permission or if the user is in the deny list.
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| _account | address | Recipient to verify |
-| _mask | uint256 | Combination of permissions to verify |
+| Name      | Type    | Description                          |
+| --------- | ------- | ------------------------------------ |
+| \_account | address | Recipient to verify                  |
+| \_mask    | uint256 | Combination of permissions to verify |
 
 ### proposeAdmin
 
@@ -221,13 +199,13 @@ function proposeAdmin(address _newAdmin) external nonpayable
 
 Proposes a new address as admin
 
-*This security prevents setting an invalid address as an admin. The pending admin has to claim its ownership of the contract, and prove that the new address is able to perform regular transactions.*
+_This security prevents setting an invalid address as an admin. The pending admin has to claim its ownership of the contract, and prove that the new address is able to perform regular transactions._
 
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| _newAdmin | address | New admin address |
+| Name       | Type    | Description       |
+| ---------- | ------- | ----------------- |
+| \_newAdmin | address | New admin address |
 
 ### setAllower
 
@@ -237,15 +215,11 @@ function setAllower(address _newAllowerAddress) external nonpayable
 
 Changes the allower address
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| _newAllowerAddress | address | New address allowed to edit the allowlist |
-
-
+| Name                | Type    | Description                               |
+| ------------------- | ------- | ----------------------------------------- |
+| \_newAllowerAddress | address | New address allowed to edit the allowlist |
 
 ## Events
 
@@ -257,14 +231,12 @@ event Initialize(uint256 version, bytes cdata)
 
 Emitted when the contract is properly initialized
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| version  | uint256 | undefined |
-| cdata  | bytes | undefined |
+| Name    | Type    | Description |
+| ------- | ------- | ----------- |
+| version | uint256 | undefined   |
+| cdata   | bytes   | undefined   |
 
 ### SetAdmin
 
@@ -274,13 +246,11 @@ event SetAdmin(address indexed admin)
 
 The admin address changed
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| admin `indexed` | address | undefined |
+| Name            | Type    | Description |
+| --------------- | ------- | ----------- |
+| admin `indexed` | address | undefined   |
 
 ### SetAllower
 
@@ -290,13 +260,11 @@ event SetAllower(address indexed allower)
 
 The stored allower address has been changed
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| allower `indexed` | address | undefined |
+| Name              | Type    | Description |
+| ----------------- | ------- | ----------- |
+| allower `indexed` | address | undefined   |
 
 ### SetAllowlistPermissions
 
@@ -306,14 +274,12 @@ event SetAllowlistPermissions(address[] accounts, uint256[] permissions)
 
 The permissions of several accounts have changed
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| accounts  | address[] | undefined |
-| permissions  | uint256[] | undefined |
+| Name        | Type       | Description |
+| ----------- | ---------- | ----------- |
+| accounts    | address\[] | undefined   |
+| permissions | uint256\[] | undefined   |
 
 ### SetPendingAdmin
 
@@ -323,15 +289,11 @@ event SetPendingAdmin(address indexed pendingAdmin)
 
 The pending admin address changed
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| pendingAdmin `indexed` | address | undefined |
-
-
+| Name                   | Type    | Description |
+| ---------------------- | ------- | ----------- |
+| pendingAdmin `indexed` | address | undefined   |
 
 ## Errors
 
@@ -343,13 +305,11 @@ error Denied(address _account)
 
 The account is denied access
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| _account | address | The denied account |
+| Name      | Type    | Description        |
+| --------- | ------- | ------------------ |
+| \_account | address | The denied account |
 
 ### InvalidAlloweeCount
 
@@ -359,9 +319,6 @@ error InvalidAlloweeCount()
 
 The provided accounts list is empty
 
-
-
-
 ### InvalidInitialization
 
 ```solidity
@@ -370,14 +327,12 @@ error InvalidInitialization(uint256 version, uint256 expectedVersion)
 
 An error occured during the initialization
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| version | uint256 | The version that was attempting to be initialized |
-| expectedVersion | uint256 | The version that was expected |
+| Name            | Type    | Description                                       |
+| --------------- | ------- | ------------------------------------------------- |
+| version         | uint256 | The version that was attempting to be initialized |
+| expectedVersion | uint256 | The version that was expected                     |
 
 ### InvalidZeroAddress
 
@@ -387,9 +342,6 @@ error InvalidZeroAddress()
 
 The address is zero
 
-
-
-
 ### MismatchedAlloweeAndStatusCount
 
 ```solidity
@@ -397,9 +349,6 @@ error MismatchedAlloweeAndStatusCount()
 ```
 
 The provided accounts and permissions list have different lengths
-
-
-
 
 ### Unauthorized
 
@@ -409,12 +358,8 @@ error Unauthorized(address caller)
 
 The operator is unauthorized for the caller
 
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
+| Name   | Type    | Description                 |
+| ------ | ------- | --------------------------- |
 | caller | address | Address performing the call |
-
-
