@@ -1,4 +1,6 @@
-# Terminology
+# Table test for CardStream
+
+Testing editing the table page
 
 The following terms are used throughout this guide:
 
