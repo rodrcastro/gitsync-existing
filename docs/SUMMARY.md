@@ -17,3 +17,4 @@
 * [Page 1](page-1.md)
 * [Allowlist Test](AllowlistV1.md)
 * [Import from customer](test2.md)
+* [Table test for CardStream](terminology.md)
