@@ -39,3 +39,11 @@ Testing the fix again, from import side
 This is a small change
 
 Adding something for video test :)
+
+***
+
+## Creating link for file with underscore
+
+If I'm typing and adding any type of content and try to [link to a page with underscores](domain/test_file_underscore.md), what does it look like in a published content?
+
+Voluptate magna deserunt cillum non nostrud eu dolor ea laborum qui cillum excepteur irure laborum incididunt. Ullamco consequat proident magna amet non adipisicing anim dolore eu enim Lorem. Labore tempor elit et consectetur esse ea laboris aliqua cillum consectetur adipisicing eu reprehenderit amet eiusmod. Qui consequat nisi consequat adipisicing velit eiusmod irure cillum aute quis exercitation. Nulla sunt minim aliquip amet ipsum ex esse anim consequat nisi consectetur sunt duis ipsum eiusmod. Nostrud quis incididunt ut laborum Lorem et ea non dolor mollit. Id officia ea aute eu ut dolore eu commodo non mollit et ipsum nulla.
