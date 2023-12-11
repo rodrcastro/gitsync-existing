@@ -12,8 +12,6 @@
 
 * [docs3](group-1-test/docs3.md)
 
-***
-
 ## 🌳 Adding emojis test (tree)
 
 * [docs1 edit 123](group-1-test/docs1.md)
@@ -25,7 +23,6 @@
 ## ☘️ Adding emojis test (4 leafs)
 
 * [Page 2](group-1-test/page-2.md)
-
 * [Annotation Test](annotationTest.md)
 * [Mermaid diagram test](mermaid-diagram-test.md)
 * [Docs 4](docs4.md)
