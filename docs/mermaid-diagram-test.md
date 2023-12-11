@@ -2,8 +2,7 @@
 
 
 
-```mermaid
-erDiagram
+{% @mermaid/diagram content="erDiagram
     blog_post {
         uuid id PK
         uuid sw_cms_page_id
@@ -33,15 +32,12 @@ erDiagram
     blog_post }o--|| cms_page : "has blog post template"
     cms_slot_config |o--o| category : "listing block"
     blog_post ||--o{ blog_post_tag : ""
-    blog_post_tag }o--|| tag : ""
-```
+    blog_post_tag }o--|| tag : """ %}
 
-```mermaid
-sequenceDiagram
+{% @mermaid/diagram content="sequenceDiagram
     participant Client
     participant Shopware Backend
     participant App Server
     Client->>Shopware Backend: GET /store-api/app-system/TestApp/generate-token
     Shopware Backend->>Client: Responds with Signed JWT Token
-    Client->>App Server: Post /product-review/submit containing JWT in header
-```
+    Client->>App Server: Post /product-review/submit containing JWT in header" %}

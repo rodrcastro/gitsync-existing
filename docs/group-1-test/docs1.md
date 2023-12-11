@@ -22,15 +22,15 @@ I removed anchor 2
 
 Added this two lines
 
-{% file src="ansible.cfg" %}
+{% file src="../ansible.cfg" %}
 
-Testing downloading the ansible file [as a link](ansible.cfg)
+Testing downloading the ansible file [as a link](../ansible.cfg)
 
-Testing downloading the spreadsheet file [as well as a link](.gitbook/assets/teste%20eventos.xlsx)
+Testing downloading the spreadsheet file [as well as a link](../.gitbook/assets/teste%20eventos.xlsx)
 
 And as a file
 
-{% file src=".gitbook/assets/teste eventos.xlsx" %}
+{% file src="../.gitbook/assets/teste eventos.xlsx" %}
 
 {% embed url="https://github.com/GitbookIO/support-bucket/issues/813" %}
 
@@ -38,8 +38,8 @@ And as a file
 [https://github.com/GitbookIO/support-bucket/issues/813](https://github.com/GitbookIO/support-bucket/issues/813)
 {% endcontent-ref %}
 
-{% content-ref url="docs2.md" %}
-[docs2.md](docs2.md)
+{% content-ref url="../docs2.md" %}
+[docs2.md](../docs2.md)
 {% endcontent-ref %}
 
 Let's add this to the PR
