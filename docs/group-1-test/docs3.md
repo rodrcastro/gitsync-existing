@@ -51,6 +51,12 @@ Making a quick change to a page where it has a link to a file with underscore th
 
 Maybe I even [create a new link](../domain/test\_file\_underscore.md) to that page while I'm at it
 
+
+
+add github files
+
+{% @github-files/github-code-block url="https://github.com/rodrcastro/kubekost/blob/main/add-key.md" %}
+
 \-------
 
 <table><thead><tr><th width="401">test</th><th width="73">asdas</th><th>tttt</th></tr></thead><tbody><tr><td>asdfasf</td><td>asfasf</td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
