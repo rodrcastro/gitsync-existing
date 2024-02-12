@@ -20,6 +20,8 @@ Test 4
 
 Let me try [linking](this-folder/SECOND.md) with Git sync
 
+askdhiakshjdasd
+
 Maybe with a different link [docs3.md](another-folder/docs3.md "mention")
 
 kasjdkajsdaskflashklf
