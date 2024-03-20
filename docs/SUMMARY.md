@@ -31,3 +31,7 @@
 * [Import from customer](test2.md)
 * [Table test for CardStream](terminology.md)
 * [File with underscore test](domain/test\_file\_underscore.md)
+
+## Testing duplicate entries in Summary.md
+* [Allowlist Test Link 2](AllowlistV1.md)
+* [Import from customer - hello](test2.md)
